@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie domowe - Formularz HTML5</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   
+    <!-- Zadanie domowe zrob z wykorzystaniem serwisu https://formspree.io -->
+    
+    <form action="https://formspree.io/l.badocha@arena108.pl" method="POST">
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name">
+        
+        <label for="lastname">Nazwisko:</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <label for="mail">E-mail:</label>
+        <input type="email" name="_replyto" id="mail">
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="city">Wybierz miasto:</label>
+        <select name="city" id="city">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+
+      	<p>Wybierz płeć:</p>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Mężczyzna</label>
+    
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Kobieta</label>
+        
+
+        
+        <label for="message">Wiadomość: </label>
+        <textarea name="message" id="message"></textarea>
+        
+        <input type="checkbox" id="agreement" name="agreement">
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+        
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>
