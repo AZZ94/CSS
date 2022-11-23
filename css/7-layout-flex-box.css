@@ -1,0 +1,54 @@
+body {
+    background-color: lightslategray;
+}
+
+header {
+    background-color: lightcoral;
+    flex-basis: 100%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex-basis: 25%;
+    background-color: aliceblue;
+}
+
+.center {
+    background-color: lightgreen;
+    flex-basis: 50%;
+}
+
+.right {
+    flex-basis: 25%;
+    background-color: lightsalmon;
+}
+
+footer {
+    background-color: lightyellow;
+    flex-basis: 100%;
+}
+
+@media (min-width: 992px) {
+    .center {
+        order: 2;
+        flex-basis: 50%;
+    }
+
+    .right {
+        order: 3;
+        flex-basis: 25%;
+    }
+
+    .left {
+        order: 1;
+        flex-basis: 25%;
+    }
+
+    footer {
+        order: 4;
+    }
+}

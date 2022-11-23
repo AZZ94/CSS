@@ -1,0 +1,59 @@
+body {
+    background-color: lightslategray;
+}
+
+header {
+    background-color: lightcoral;
+    flex-basis: 100%;
+    
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    /* order: 3; */
+   flex-basis: 25%;
+    background-color: aliceblue;
+}
+
+.center {
+    /* order: 1;
+    width: 80%; */
+    background-color: lightgreen;
+    flex-basis: 50%;
+}
+
+.right {
+    /* order: 2;
+    width: 20%; */
+    flex-basis: 25%;
+    background-color: lightsalmon;
+}
+
+footer {
+    background-color: lightyellow;
+    flex-basis: 100%;
+}
+
+@media (max-width: 922px) {
+    .center {
+        order: 1;
+        flex-basis: 75%;
+    }
+
+    .right {
+        order: 2;
+    }
+
+    .left {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    footer {
+        order: 4;
+    }
+}
