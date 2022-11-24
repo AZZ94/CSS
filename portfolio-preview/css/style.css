@@ -1,0 +1,281 @@
+/* base */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: all .3s;
+    display: inline-block;
+    margin: auto;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: white;
+    background-color: #007bff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 1.9em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* header */
+
+.main-header {
+    background-image: url(../portfolio-grafiki/img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .main-header-content {
+    text-align: center;
+}
+
+.main-header .main-header-content h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header .main-header-content p {
+    color: #333;
+    font-size: 1.3em;
+    margin: 40px 0;
+}
+
+.main-header .main-header-content span {
+    color: #007bff;
+}
+
+/* nav */
+
+.main-menu {
+    background-color: #007bff;
+
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-menu ul .menu-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-menu ul .menu-item a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    display: block;
+    transition: all .3s;
+}
+
+.main-menu ul .menu-item a:hover {
+    color: #007bff;
+    background-color: white;
+}
+
+
+/* about */
+
+.about {
+    text-align: center;
+}
+
+.about .about-img {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-wrapper .portfolio-item {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+.portfolio-wrapper .portfolio-item h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.8);
+    margin: 0;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-weight: 300;
+    font-size: 3em;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.portfolio-wrapper .portfolio-item h3:hover {
+    opacity: 1;
+}
+
+.portfolio-wrapper .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* kontakt */
+
+.kontakt form {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kontakt input[type="text"],
+.kontakt input[type="email"] {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.kontakt textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.social-links {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.social-links .social-link {
+    font-size: 2.5em;
+    color: #007bff;
+    display: inline-block;
+    margin: 0 20px;
+    transition: all 0.3s;
+}
+
+.social-links .social-link:hover {
+    color: #777;
+}
+
+
+/* footer */
+
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+
+/* responsive */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header .main-header-content h1 {
+        font-size: 3em;
+    }
+
+    .about .about-img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .kontakt input[type="text"],
+    .kontakt input[type="email"] {
+        flex-basis: 100%;
+    }
+}
+
+
