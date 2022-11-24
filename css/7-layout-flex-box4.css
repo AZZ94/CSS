@@ -93,24 +93,3 @@ footer {
         order: 4;
     }
 }
-
-@media (max-width: 768px) {
-    .center {
-        order: 1;
-        flex-basis: 100%;
-    }
-
-    .right {
-        order: 3;
-        flex-basis: 100%;
-    }
-
-    .left {
-        order: 2;
-        flex-basis: 100%;
-    }
-
-    footer {
-        order: 4;
-    }
-}
