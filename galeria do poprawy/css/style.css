@@ -13,14 +13,14 @@ h2 {
 }
 
 #gallery {
-	width: 1024px;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 }
 
 figure {
 	display: inline-block;
-	width: 338px;
+	width: 335px;
 	margin: 0;
 	margin-bottom: 10px;
 }
@@ -32,4 +32,22 @@ figure figcaption {
 figure img{
 	width: 100%;
 	border: 2px solid #444;
+}
+
+@media screen and (max-width: 992px) {
+	figure {
+		width: 49%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	figure {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#gallery {
+		width: 100%;
+	}
 }
